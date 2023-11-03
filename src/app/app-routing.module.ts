@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'ion-action-sheet',
+    loadChildren: () => import('./ion-action-sheet/ion-action-sheet.module').then( m => m.IonActionSheetPageModule)
   }
 ];
 @NgModule({
