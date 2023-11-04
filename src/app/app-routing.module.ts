@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'ion-action-sheet',
     loadChildren: () => import('./ion-action-sheet/ion-action-sheet.module').then( m => m.IonActionSheetPageModule)
+  },  {
+    path: 'ion-accordion',
+    loadChildren: () => import('./ion-accordion/ion-accordion.module').then( m => m.IonAccordionPageModule)
   }
+
 ];
 @NgModule({
   imports: [
